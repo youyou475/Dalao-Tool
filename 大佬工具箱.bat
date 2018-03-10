@@ -1,13 +1,12 @@
 @echo off
-title 大佬工具箱 V1.3.6
+title 大佬工具箱 V1.3.7
 color f4
 :home
 cls
 echo ===================
 echo 欢迎使用大佬工具箱！
-echo 2018年第一版，祝大家新年快乐~
-echo 当前使用版本：V1.3.6
-echo 版本更新日期：2018年01月08日
+echo 当前使用版本：V1.3.7
+echo 版本更新日期：2018年03月10日
 echo 由youyou475开发并维护
 echo ===================
 echo 操作选项：
@@ -19,7 +18,7 @@ echo 5.打开实用软件
 echo 6.高级功能
 echo 7.作者及版本
 echo 8.变更配色
-echo 9.进入youyou475博客
+echo 9.浏览大佬工具箱GitHub项目
 echo 10.反馈工具箱Bug
 echo 更多选项：
 echo 11.退出本工具箱
@@ -33,12 +32,12 @@ if /I "%xz%"=="5" goto ruanjianhome
 if /I "%xz%"=="6" goto kinghome
 if /I "%xz%"=="7" goto abouthome
 if /I "%xz%"=="8" goto colorhome
-if /I "%xz%"=="9" goto youyou475bk
+if /I "%xz%"=="9" goto toolgithub
 if /I "%xz%"=="10" goto reportbughome
 if /I "%xz%"=="11" exit
-:youyou475bk
+:toolgithub
 path=%path%; C:\Program Files\Internet Explorer\iexplore.exe
-start iexplore http://youyou475.wang/
+start iexplore https://github.com/youyou475/Dalao-Tool
 goto home
 :reportbughome
 cls
@@ -48,15 +47,13 @@ echo ===================
 echo 反馈选项：
 echo 1.QQ反馈
 echo 2.邮箱反馈
-echo 3.博客反馈
 echo 更多选项：
-echo 4.回到主菜单
+echo 3.回到主菜单
 echo ===================
 set /P xz=操作选择:
 if /I "%xz%"=="1" goto qqreport
 if /I "%xz%"=="2" goto emailreport
-if /I "%xz%"=="3" goto wordpressreport
-if /I "%xz%"=="4" goto home
+if /I "%xz%"=="3" goto home
 :qqreport
 cls
 echo ===================
@@ -92,10 +89,6 @@ echo ===================
 set /P xz=操作选择:
 if /I "%xz%"=="1" goto reportbughome
 if /I "%xz%"=="2" goto home
-:wordpressreport
-path=%path%; C:\Program Files\Internet Explorer\iexplore.exe
-start iexplore http://youyou475.wang/windows%e6%89%b9%e5%a4%84%e7%90%86/%e5%a4%a7%e4%bd%ac%e5%b7%a5%e5%85%b7%e7%ae%b1bug%e5%8f%8d%e9%a6%88%e5%b8%96/
-goto reportbughome
 :kinghome
 cls
 echo ===================
@@ -122,7 +115,7 @@ echo ===================
 echo 欢迎使用打开实用软件功能
 echo ===================
 echo 打开选项：
-echo 1.打开影梭软件
+echo 1.打开Shadowsocks
 echo 更多选项：
 echo 2.回到主菜单
 echo ===================
@@ -131,7 +124,7 @@ if /I "%xz%"=="1" goto yingsuohome
 if /I "%xz%"=="2" goto home
 :yingsuohome
 start 工作目录/大佬工具箱工作目录/工具/影梭/影梭.exe
-goto home
+goto ruanjianhome
 :robothome
 cls
 start notepad 工作目录/大佬工具箱工作目录/聊天机器人帮助文档.txt
@@ -266,6 +259,7 @@ goto abouthome
 cls
 echo ===================
 echo 欢迎使用实用软件下载功能
+echo 软件源均为官方源或百度源，可放心下载使用
 echo ===================
 echo 软件选项：
 echo 1.百度网盘（官方源，版本：5.7.2，更新于2017年11月16日）
