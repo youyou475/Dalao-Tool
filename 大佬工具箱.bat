@@ -1,12 +1,12 @@
 @echo off
-title 大佬工具箱 V1.3.7
-color f4
+title 大佬工具箱 V1.3.8
+color f1
 :home
 cls
 echo ===================
 echo 欢迎使用大佬工具箱！
-echo 当前使用版本：V1.3.7
-echo 版本更新日期：2018年03月10日
+echo 当前使用版本：V1.3.8
+echo 版本更新日期：2018年03月17日
 echo 由youyou475开发并维护
 echo ===================
 echo 操作选项：
@@ -19,9 +19,10 @@ echo 6.高级功能
 echo 7.作者及版本
 echo 8.变更配色
 echo 9.浏览大佬工具箱GitHub项目
-echo 10.反馈工具箱Bug
+echo 10.打开youyou475技术论坛
+echo 11.反馈工具箱Bug
 echo 更多选项：
-echo 11.退出本工具箱
+echo 12.退出本工具箱
 echo ===================
 set /P xz=操作选择:
 if /I "%xz%"=="1" goto pinghome
@@ -33,8 +34,13 @@ if /I "%xz%"=="6" goto kinghome
 if /I "%xz%"=="7" goto abouthome
 if /I "%xz%"=="8" goto colorhome
 if /I "%xz%"=="9" goto toolgithub
-if /I "%xz%"=="10" goto reportbughome
-if /I "%xz%"=="11" exit
+if /I "%xz%"=="10" goto youyou475forum
+if /I "%xz%"=="11" goto reportbughome
+if /I "%xz%"=="12" exit
+:youyou475forum
+path=%path%; C:\Program Files\Internet Explorer\iexplore.exe
+start iexplore http://http://youyou475.666forum.com/
+goto home
 :toolgithub
 path=%path%; C:\Program Files\Internet Explorer\iexplore.exe
 start iexplore https://github.com/youyou475/Dalao-Tool
@@ -167,15 +173,15 @@ pause>nul
 goto robothome1
 :baidunetdiskrobotdownload
 path=%path%; C:\Program Files\Internet Explorer\iexplore.exe
-start iexplore http://issuecdn.baidupcs.com/issue/netdisk/yunguanjia/BaiduNetdisk_5.6.2.exe
+start iexplore http://issuecdn.baidupcs.com/issue/netdisk/yunguanjia/BaiduNetdisk_6.0.2.exe
 goto robothome
 :qqrobotdownload
 path=%path%; C:\Program Files\Internet Explorer\iexplore.exe
-start iexplore https://dldir1.qq.com/qqfile/qq/QQ8.9.4/21603/QQ8.9.4.exe
+start iexplore https://dldir1.qq.com/qqfile/qq/QQ9.0.1/23161/QQ9.0.1.exe
 goto robothome
 :xunleirobotdownload
 path=%path%; C:\Program Files\Internet Explorer\iexplore.exe
-start iexplore http://down.sandai.net/thunder9/Thunder9.1.39.880.exe
+start iexplore http://down.sandai.net/thunder9/Thunder9.1.47.1020.exe
 goto robothome
 :nowtimehome
 cls
@@ -262,10 +268,10 @@ echo 欢迎使用实用软件下载功能
 echo 软件源均为官方源或百度源，可放心下载使用
 echo ===================
 echo 软件选项：
-echo 1.百度网盘（官方源，版本：5.7.2，更新于2017年11月16日）
-echo 2.QQ（官方源，版本：8.9.6，更新于2017年11月27日）
-echo 3.迅雷（官方源，版本：9.1.46.998，更新于2018年01月02日）
-echo 4.Notepad++（百度源，版本：7.5.4，更新于2018年01月02日）
+echo 1.百度网盘（官方源，版本：6.0.2，更新于2018年03月06日）
+echo 2.QQ（官方源，版本：9.0.1，更新于2018年03月06日）
+echo 3.迅雷（官方源，版本：9.1.47.1020，更新于2018年01月29日）
+echo 4.Notepad++（百度源，版本：7.5.5，更新于2018年03月01日）
 echo 更多选项：
 echo 5.回到主菜单
 echo ===================
@@ -278,19 +284,19 @@ if /I "%xz%"=="5" goto home
 goto apphome
 :baidunetdiskdownload
 path=%path%; C:\Program Files\Internet Explorer\iexplore.exe
-start iexplore http://issuecdn.baidupcs.com/issue/netdisk/yunguanjia/BaiduNetdisk_5.7.2.exe
+start iexplore http://issuecdn.baidupcs.com/issue/netdisk/yunguanjia/BaiduNetdisk_6.0.2.exe
 goto apphome
 :qqdownload
 path=%path%; C:\Program Files\Internet Explorer\iexplore.exe
-start iexplore https://dldir1.qq.com/qqfile/qq/QQ8.9.6/22427/QQ8.9.6.exe
+start iexplore https://dldir1.qq.com/qqfile/qq/QQ9.0.1/23161/QQ9.0.1.exe
 goto apphome
 :xunleidownload
 path=%path%; C:\Program Files\Internet Explorer\iexplore.exe
-start iexplore http://down.sandai.net/thunder9/Thunder9.1.46.998.exe
+start iexplore http://down.sandai.net/thunder9/Thunder9.1.47.1020.exe
 goto apphome
 :notepad++download
 path=%path%; C:\Program Files\Internet Explorer\iexplore.exe
-start iexplore http://sw.bos.baidu.com/sw-search-sp/software/7cd4779d0c4ae/npp_7.5.4_Installer.exe
+start iexplore https://www.baidu.com/link?url=FsHYwAiLoIw3qJjQHxbSxuQ_MvdTfeON0LFhB6OrUOZmIUjtxDTHjEqEpU3W5LH2zZZPChkqRuYfC5J8KelaRrd36Kpw9VL7SFbC2PCA05q&wd=&eqid=b0b527ab0000e638000000035aad1dc0
 goto apphome
 :colorhome
 cls
@@ -312,6 +318,6 @@ if /I "%xz%"=="1" color fa
 if /I "%xz%"=="2" color fd
 if /I "%xz%"=="3" color fc
 if /I "%xz%"=="4" color 0a
-if /I "%xz%"=="5" color f4
+if /I "%xz%"=="5" color f1
 if /I "%xz%"=="6" goto home
 goto home

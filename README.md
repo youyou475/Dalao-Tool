@@ -2,6 +2,6 @@
 
 请使用Windows下载源码后，打开 大佬工具箱.bat
 
-现已更新至Version 1.3.7
+现已更新至Version 1.3.8
 
 如果你有修改建议，欢迎Fork此项目，然后向我Pull Request
